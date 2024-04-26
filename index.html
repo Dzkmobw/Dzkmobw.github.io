@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>nihao</title>
 <link rel="icon" href="kagura-mea-portrait-66.ico" type="image/x-icon">
@@ -30,6 +31,18 @@
       width: 150px; /* 设置图像宽度 */
       height: auto; /* 让高度根据宽度等比例缩放 */
     }
+
+  @media only screen and (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .profile img {
+    width: 100%; /* 图像宽度充满容器 */
+    height: auto;
+  }
+}
 </style>
 
 </head>
