@@ -120,17 +120,23 @@
     </div>
 </div>
 
-<div class="button-container">
-  <button class="button" onclick="incrementCounter(1)">好的</button>
-  <span id="counter1">0</span>
+<div class="sponsor">
+  <h5>Vote (any times):</h5>
+</div>
 
-  <button class="button" onclick="incrementCounter(2)">是的</button>
-  <span id="counter2">0</span>
+<div class="button-container">
+  <div class="button-row">
+      <button class="button" onclick="incrementCounter(1)">好的</button>
+      <span id="counter1">114</span>
+
+      <button class="button" onclick="incrementCounter(2)">是的</button>
+      <span id="counter2">514</span>
+  </div>
 </div>
 
 <script>
-    let count1 = 0;
-    let count2 = 0;
+    let count1 = 114;
+    let count2 = 514;
 
     function incrementCounter(btnId) {
         if (btnId === 1) {
