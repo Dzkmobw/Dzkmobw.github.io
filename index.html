@@ -63,6 +63,28 @@
     margin-left: 40px; /* 添加左侧间距 */
   }
 
+  .button-container {
+        text-align: center; /* 按钮水平居中 */
+    }
+
+  .button {
+    display: inline-block;
+      margin: 8px;
+      padding: 8px 16px;
+      font-size: 20px; /* 增加字体大小 */
+      font-weight: bold; /* 加粗字体 */
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      border: 0px;
+    }
+
+    #counter1, #counter2 {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
   @media only screen and (max-width: 600px) {
   .container {
     max-width: 100%;
@@ -112,6 +134,28 @@
   </a>
 </div>
 
+<div class="button-container">
+  <button class="button" onclick="incrementCounter(1)">好的</button>
+  <span id="counter1">0</span>
+
+  <button class="button" onclick="incrementCounter(2)">是的</button>
+  <span id="counter2">0</span>
+</div>
+
+<script>
+    let count1 = 0;
+    let count2 = 0;
+
+    function incrementCounter(btnId) {
+        if (btnId === 1) {
+            count1++;
+            document.getElementById('counter1').textContent = count1;
+        } else if (btnId === 2) {
+            count2++;
+            document.getElementById('counter2').textContent = count2;
+        }
+    }
+</script>
 
 <div class="footer">
     &copy; 2024 Hop-Up Tech.
